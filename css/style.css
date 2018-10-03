@@ -15,9 +15,9 @@ body{
     display: grid;
     grid-template-columns: .5fr 1fr 1fr .5fr; /* for left and right sections */
     grid-gap: 10px;
-    grid-template-areas: 
+    grid-template-areas:
             ". left right .";
-    height: 100%;        
+    height: 100%;
 }
 
 #inner{
@@ -125,4 +125,19 @@ p.subtitle{
         transform: scale(1);
         opacity: 1;
       }
+}
+
+@media (max-width:770px) {
+    #home-container {
+        display: block;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    #inner {
+        margin: 0 auto;
+    }
+    #illustration {
+        margin: 80px auto;
+        padding: 0;
+    }
 }
